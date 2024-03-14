@@ -1,0 +1,36 @@
+{% extends 'main.html' %} {% block content %}
+
+<style>
+    input[type="text"] {
+      font-size: 13px;
+      width: 100%;
+      height: 50px;
+    }
+    .button {
+      margin-top: 20px;
+      font-size: 15px;
+      padding: 0.5rem;
+      background-color: blue;
+      color: white;
+      border-radius: 10px;
+      border: none;
+    }
+
+</style>
+
+<div class="center-container">
+    <form action="" method="POST">
+        {%csrf_token%}
+
+        <label for="long_url">Long URL</label>
+        <input type="text" name="long_url" />
+        <input type="submit" value="Shorten URL" class="button"/>
+    </form>
+</div>
+
+{% endblock %}
+
+<div class="form__group">
+    <label for="room_name">Room Name</label>
+    {{form.name}}
+</div>

@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+    overflow: hidden;
+}
+
+nav {
+    background-color: #333;
+    height: 6rem;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    list-style: none;
+}
+nav a {
+    font-size: 20px;
+}
+nav a:hover {
+    text-decoration: none;
+}
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    font-size: 1.5rem;
+}
+.reply {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    max-width: 800px;
+    margin: 0 auto;
+}
+form {
+    max-width: 700px; /* Set a maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .center-container {
+        font-size: 0.8rem;
+    }
+}
+
